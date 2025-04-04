@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerciții</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container navbar">
+                <div class="logo">
+                    <h1>VA</h1>
+                </div>
+                <div class="links">
+                    <a href="index.html">Acasă</a>
+                    <a href="teorie.html">Teorie</a>
+                    <a href="exercitii.html">Exerciții</a>
+                    <a href="teste.html">Teste</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <div class="space"></div>
+    <main>
+        <p class="top-left container">Exerciții / <span>Tipul 4</span></p>
+        <div class="test container">
+            
+            <div class="title">Exerciții tip 4</div>
+            <div class="cond-4">
+                <small>4. De la tastatură se citesc 20 de coduri ale tabelului ASCII extins - numere întregi între 0 și 255.
+                </small>
+                <p><span>Sarcina:</span> Scrieți un program care determină câte dintre codurile citite corespund codului caracterului ’+’.
+                </p>
+                <p><span>Ieșire:</span> La ecran se afișează un singur număr întreg – numărul de coduri ale tabelului ASCII extins, citite
+                    de la tastatură, care corespund codului caracterului ‘+’.</p>
+                <textarea name="" id="" placeholder="Scrie răspunsul"></textarea>
+            </div>
+            <p class="answerV hidden green">Raspunsul corect:</p>
+            <p class="answerV hidden ">#include &lt;iostream> <br>
+
+                int main() { <br>
+                    const int n = 20; <br>
+                    int count = 0;<br>
+                    <br>
+                    std::cout << "Introduceți 20 de coduri ASCII (între 0 și 255):\n"; <br>
+                    
+                    for (int i = 0; i < n; ++i) {<br>
+                        int code;<br>
+                        std::cin >> code;<br>
+                        
+                        if (code == 43) {<br>
+                            ++count;<br>
+                        }<br>
+                    }<br>
+                    
+                    std::cout << count << std::endl;<br>
+                    return 0;<br>
+                }
+                </p>
+            <p class="punctaj">Punctaj: <span>8</span> </p>
+            <div class="line"></div>
+            <div class="cond-4">
+                <small > 4.
+                    La un concurs de erudiție doi elevi au acumulat punctaje care reprezintă numere de trei cifre. Elevii
+au observat că punctajul acumulat de fiecare dintre ei este un număr egal cu răsturnatul celuilalt.
+
+                    
+                </small>
+                <p><span>Sarcina:</span>  Scrieți un program care cunoscând punctajul N acumulat de primul elev determină punctajul
+                    acumulat de al doilea elev. 
+                </p>
+                <p><span>Intrare. </span> e. De la tastatură se citește un număr întreg N - punctajul acumulat de primul elev
+                    
+                </p>
+                <p><span>Ieșire:</span> La ecran se afișează un singur număr întreg – răsturnatul numărului N. </p>
+                <p><span>Exemplu:</span> Numărul 529 este răsturnatul numărului 925 </p>
+                <textarea name="" id=""></textarea>
+            </div>
+            <p class="hidden answerV green">Raspuns corect:</p>
+            <p class="hidden answerV">
+                #include &lt;iostream> <br>
+
+                    using namespace std; <br>
+                    
+                    int main() { <br>
+                        int N, P, count = 0; <br>
+                        cin >> N >> P; <br>
+                        
+                        for (int i = 0; i < N; i++) { <br>
+                            int score; <br>
+                            cin >> score; <br>
+                            if (score >= P) { <br>
+                                count++; <br>
+                            } <br>
+                        } <br>
+                        
+                        cout << count << endl; <br>
+                        
+                        return 0; <br>
+                    }
+            </p>
+            <p class="hidden answerV"><span class="blue">Notă.
+            </span>  Se admit oricare alte variante corecte.</p>
+
+            <p class="punctaj">Punctaj: <span>8</span> </p>
+            <div class="line"></div>
+            <div class="cond-4">
+                <small>4.
+                    Tabelarea unei funcții de o variabilă reprezintă generarea valorilor funcției f(x) pentru toate valorile
+                    argumentelor care parcurg un domeniu de valori de la x1 până la x2 cu pasul ∆x, adică x1, x1+∆x,
+                    x1+2*∆x, x1+3*∆x, ... , x2. 
+                </small>
+                <p><span>Sarcina:</span> Scrieți un program care tabelează funcția f(x)=3*sin(x2+5)pe segmentul [x1;x2]
+                    cu pasul ∆x. 
+                </p>
+                <p><span>Intrare:</span> . De la tastatură se citesc trei numere reale x1, x2 și ∆x .
+
+                </p>
+                <p><span>Ieșire:</span> La ecran se afișează pe rânduri separate câte două numere reale separate prin spațiu: valoarea
+                    argumentului x și valoarea funcției f(x) generate de tabelarea acesteia.</p>
+                <p><span>Notă:</span> Se admite, că x1 < x2.</p>
+                <textarea name="" id="" placeholder="Scrie răspunsul"></textarea>
+            </div>
+            <p class="answerV hidden green">Raspunsul corect:</p>
+            
+            <p class="answerV hidden ">#include &lt;iostream> <br>
+                #include &lt;cmath> <br>
+                #include &lt;iomanip> <br>
+                
+                using namespace std; <br>
+                
+                int main() { <br>
+                    double x1, x2, delta_x; <br>
+                
+                    
+                    cout << "Introduceți x1: "; <br>
+                    cin >> x1; <br>
+                
+                    cout << "Introduceți x2: "; <br>
+                    cin >> x2; <br>
+                
+                    cout << "Introduceți ∆x: ";<br>
+                    cin >> delta_x;<br>
+                
+                 
+                    if (x1 >= x2) {<br>
+                        cout << "x1 trebuie să fie mai mic decât x2." << endl;<br>
+                        return 1; <br>
+                    }<br>
+                
+                  
+                    cout << fixed << setprecision(6); <br> 
+                    for (double x = x1; x <= x2 + 1e-9; x += delta_x) { <br>
+                        double fx = 3 * sin(x * x + 5); <br>
+                        cout << x << " " << fx << endl; <br>
+                    } <br>
+                
+                    return 0; <br>
+                }
+                </p>
+            <p class="punctaj">Punctaj: <span>8</span> </p>
+            <div class="line"></div>
+            <div class="cond-4">
+                <small > 4.
+                    La examenul pentru șoferi auto s-au înregistrat N persoane. Se știe că punctajul minim care trebuie
+                    acumulat de o persoană ca să susțină examenul este egal cu P.
+                    
+                </small>
+                <p><span>Sarcina:</span> Scrieți un program care determină numărul de persoane care au susținut examenul. 
+                </p>
+                <p><span>Intrare. </span> De la tastatură se citesc două numere întregi: N – numărul de persoane înregistrate la examen
+                    și P – punctajul minim necesar pentru a susține examenul. Apoi se citesc N numere întregi –
+                    punctajul acumulat de fiecare din persoanele înregistrate la examen.
+                    
+                </p>
+                <p><span>Ieșire:</span> . La ecran se afișează un singur număr întreg – numărul de persoane care au susținut examenul.</p>
+                <textarea name="" id=""></textarea>
+            </div>
+            <p class="hidden answerV green">Raspuns corect:</p>
+            <p class="hidden answerV">
+                #include &lt;iostream> <br>
+
+                    using namespace std; <br>
+                    
+                    int main() { <br>
+                        int N, P, count = 0; <br>
+                        cin >> N >> P; <br>
+                        
+                        for (int i = 0; i < N; i++) { <br>
+                            int score; <br>
+                            cin >> score; <br>
+                            if (score >= P) { <br>
+                                count++; <br>
+                            } <br>
+                        } <br>
+                        
+                        cout << count << endl; <br>
+                        
+                        return 0; <br>
+                    }
+            </p>
+            <p class="hidden answerV"><span class="blue">Notă.
+            </span>  Se admit oricare alte variante corecte.</p>
+
+           
+            
+
+            
+            
+         
+            
+                   
+            
+            <div class="answer">
+                <p id="answerStart">VEZI RASPUNSULE <i class="fa-solid fa-arrow-right"></i></p>
+                 
+
+                </i></div>
+        </div>
+    </main>
+    <div class="space"></div>
+    <div class="space"></div>
+    <footer >
+        <div class="footer container">
+            <div>
+                <h1>Pregatire Bac</h1>
+                <a href="index.html" >Acasă</a>
+                    <a href="teorie.html">Teorie</a>
+                    <a href="exercitii.html">Exerciții</a>
+                    <a href="teste.html">Teste</a>
+            </div>
+            <div>
+                <h1>Informatie generala </h1>
+                <a href="index.html" >Telefon: 022 557 368</a>
+                    <a href="teorie.html">Address: Nicolae Titulescu St, Chișinău</a>
+                    <!-- <a href="exercitii.html">Exercitii</a>
+                    <a href="teste.html">Teste</a> -->
+            </div>
+            <div>
+                <h1>Adrese utile</h1>
+                <!-- <a href="index.html" ></a> -->
+                    <a href="https://mc.gov.md/ro/content/biblioteca-nationala-republicii-moldova">Biblioteca Națională al Republicii Moldova</a>
+                    <a href="https://mec.gov.md/">Ministerul Educației al Republicii Moldova</a>
+                    <a href="https://ctice.gov.md/manuale-scolare/">Centrul Tehnologii Inform. şi Comunicaţionale în Educaţie</a>
+                    <a href="https://chisinauedu.md/">Directia Generala Educatie, Tineret si Sport</a>
+                    <!-- <a href="exercitii.html">Exercitii</a>
+                    <a href="teste.html">Teste</a> -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

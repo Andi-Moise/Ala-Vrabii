@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesiunea 2024</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container navbar">
+                <div class="logo">
+                    <h1>VA</h1>
+                </div>
+                <div class="links">
+                    <a href="index.html">Acasă</a>
+                    <a href="teorie.html">Teorie</a>
+                    <a href="exercitii.html">Exerciții</a>
+                    <a href="teste.html">Teste</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <div class="space"></div>
+    <main>
+        <p class="top-left container">Teste / <span>Sesiunea 2024</span></p>
+        <div class="test container">
+            
+            <div class="title">Sesiunea 2024</div>
+            <div class="cond-1">
+                <div class="grid">
+                    <div class="box">
+                        <p class="heading">Fie date declarațiile:</p>
+                        <div class="others">
+                            <small>enum rx {A, B, C, D};</small>
+                            <small>rx x;</small>
+                            <small>enum {t4, t5, t6, t7} w;</small>
+                            <small>char y;</small>
+                            <small>int p, q;</small>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <p class="heading">Fie date valorile variabilelor:</p>
+                        <div class="others">
+                            <small>x = C;</small>
+                            <small>y = 'A';</small>
+                            <small>q = 5;</small>
+                            <small>p = 10;</small>
+                            <small>w = t4;</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="line"></div>
+
+            <div class="cond-1-a">
+                <small>A. Identifica tipul anonim de date.</small>
+                <input type="text" placeholder="Selecteaza rapsunsul">
+                <p class="green answerV hidden">Răspunsul corect: enum {t4, t5, t6, t7}</p>
+                
+            </div>
+            <div class="cond-1-b">
+                <small>B. Identifica două tipuri de date predefinite.</small>
+                <input type="text" placeholder="Selecteaza rapsunsul">
+                <input type="text" placeholder="Selecteaza rapsunsul">
+                <p class="green answerV hidden">Răspunsul corect: char, int</p>
+            </div>
+            <div class="cond-1-c">
+                <small>C. Calculați și scrieți în spațiul rezervat la răspuns valoarea
+                    fiecărei din următoarele expresii</small>
+                <div class="big-box">
+                    <div class="between">
+                        <small>q  /  4.0  *  p  –  10</small>
+                        <input type="text" placeholder="Scrie răspunusul">  
+                    </div>
+                    <div class="between">
+                        <small>p – q * int(w)</small>
+                        <input type="text" placeholder="Scrie răspunusul">  
+                    </div>
+                    <div class="between">
+                        <small>char(y + x)</small>
+                        <input type="text" placeholder="Scrie răspunusul">  
+                    </div>
+                </div>
+                <p class="green answerV hidden">Răspunsul corect: 2.5, 10, C</p>
+            </div>
+            <p class="punctaj">Punctaj: <span>8 puncte</span> </p>
+
+            <div class="line"></div>
+
+            <div class="cond-2">
+                <small>2. Fie date valorile variabilelor de tip întreg: a = 57, b = 10, d = 2.
+                    Coloană din stânga a următorului tabel conține instrucțiuni alimbajului C++ . Completați fragmentele lipsă astfel ca
+                    expresiile date să afișeze informația – valoarea și formatul – la fel ca cea prezentată în coloana din
+                    dreapta din același rând</small>
+                    <table >
+                        <tr>
+                          <th>Instrucțiune</th>
+                          <th>Afișare</th>
+                          
+                        </tr>
+                        <tr>
+                          <td>if (a <input type="text" placeholder="Scrie răspunusul">                                         ) cout << 2 *(a - 3)% 10;
+                            else cout << 100 – a;</td>
+                          <td>8</td>
+
+                        </tr>
+                        <tr>
+                          <td>for(int i = 12; i >= b; i                      <input type="text" placeholder="Scrie răspunusul">                    )
+                            <br>
+                            {c = i * b; cout << c << ’ ’; }</td>
+                          <td>120 110 100</td>
+
+                        </tr>
+                        <tr>
+                          <td>while ( a           <input type="text" placeholder="Scrie răspunusul">                              )
+                            { cout << a / 10; a = a + 3;}</td>
+                          <td>5</td>
+
+                        </tr>
+                        <tr>
+                          <td>do <br> {
+                            d = d * d; cout << d << endl;
+                          } <br> while (d       <input type="text" placeholder="Scrie răspunusul">                            );</td>
+                          <td>4 16 256</td>
+
+                        </tr>
+                      </table>
+                    <table class="answerV hidden">
+                        <tr>
+                          <th class="green">Instrucțiune</th>
+                        
+                          
+                        </tr>
+                        <tr>
+                          <td> if (a > 0) cout << 2 *(a - 3)% 10; <br>
+                            else cout << 100 – a;
+</td>
+                         
+
+                        </tr>
+                        <tr>
+                          <td>for(int i = 12; i >= b; i--)
+        
+                            <br>
+                            {c = i * b; cout << c << ’ ’; }</td>
+                        
+
+                        </tr>
+                        <tr>
+                          <td>while ( a == 57) <br>
+                            { cout << a / 10; a = a + 3;}</td>
+                          
+
+                        </tr>
+                        <tr>
+                          <td>do { <br> d = d * d; cout << d << endl; <br> } while (d < 256);</td>
+                         
+
+                        </tr>
+                      </table>
+                      <p class="hidden answerV"><span class="blue">Notă.
+                    </span>  Se admit oricare alte variante corecte.</p>
+            </div>
+            <p class="punctaj">Punctaj: <span>8 puncte</span> </p>
+            <div class="line"></div>
+            <div class="cond-3">
+                <small>3. Fie dată următoarea secvență de program:</small>
+                    <table >
+                        <tr>
+                          <th>Instrucțiune</th>
+                          <th>Afișare</th>
+                          
+                        </tr>
+                        <tr>
+                          <td>float a = -10.2, b = 17.35, c = -17.4; <br>
+                            if (a > b) a = trunc(a)*2; <br>
+                            else <br>
+                                   if (abs(trunc(c)) == abs(trunc(b))) c = trunc(c) + 10; <br>
+                                   else b = trunc(b) + 10; <br>
+                            cout  &lt;&lt; fixed  &lt;&lt;setprecision(0)  &lt;&lt; a  &lt;&lt;' ' &lt;&lt; b  &lt;&lt;' ' &lt;&lt; c;
+                            </td>
+                          <td class="appart">Scrieți ce se va afișa în rezultatul execuției secvenței date de program:
+                            <br>
+                            <input type="text" placeholder="Scrie răspunusul">
+                          </td>
+
+                        </tr>
+                        
+                       
+                      </table>
+                      <p class="green answerV hidden">Răspunsul corect: : -10 17 -7
+                    </p>
+                <small> Fie dată o secvență de instrucțiuni care citește de la tastatură un număr întreg a.
+                    Completați spațiul rezervat în instrucțiunea switch cu o expresie, astfel ca la ecran să se afișeze
+                    cuvântul DA, dacă numărul a este divizibil cu 3, dar nu este divizibil cu 5; în caz contrar să se afișeze
+                    cuvântul NU.
+                    </small>
+                    <p>cout<< " a = "; cin >> a; <br>
+                        switch <br>(<input type="text" placeholder="Scrie răspunusul">) <br>
+                        { <br>
+                        case 1: cout << "DA"; break; <br>
+                        default: cout << "NU";<br>
+                        }</p>
+                        <p class="answerV hidden green">Raspunsul corect:  a % 3 == 0 && a % 5 !=0</p>
+                        <p class="hidden answerV"><span class="blue">Notă.
+                        </span>  Se admit oricare alte variante corecte.</p>
+            </div>
+            <p class="punctaj">Punctaj: <span>7 puncte</span> </p>
+            <div class="line"></div>
+            <div class="cond-4">
+                <small>4. De la tastatură se citesc 20 de coduri ale tabelului ASCII extins - numere întregi între 0 și 255.
+                </small>
+                <p><span>Sarcina:</span> Scrieți un program care determină câte dintre codurile citite corespund codului caracterului ’+’.
+                </p>
+                <p><span>Ieșire:</span> La ecran se afișează un singur număr întreg – numărul de coduri ale tabelului ASCII extins, citite
+                    de la tastatură, care corespund codului caracterului ‘+’.</p>
+                <textarea name="" id="" placeholder="Scrie răspunsul"></textarea>
+            </div>
+            <p class="answerV hidden green">Raspunsul corect:</p>
+            <p class="answerV hidden ">#include &lt;iostream> <br>
+
+                int main() { <br>
+                    const int n = 20; <br>
+                    int count = 0;<br>
+                    <br>
+                    std::cout << "Introduceți 20 de coduri ASCII (între 0 și 255):\n"; <br>
+                    
+                    for (int i = 0; i < n; ++i) {<br>
+                        int code;<br>
+                        std::cin >> code;<br>
+                        
+                        if (code == 43) {<br>
+                            ++count;<br>
+                        }<br>
+                    }<br>
+                    
+                    std::cout << count << std::endl;<br>
+                    return 0;<br>
+                }
+                </p>
+            <p class="punctaj">Punctaj: <span>8</span> </p>
+            <div class="answer">
+                <p id="answerStart">VEZI RASPUNSULE <i class="fa-solid fa-arrow-right"></i></p>
+                 
+
+                </i></div>
+        </div>
+    </main>
+    <div class="space"></div>
+    <div class="space"></div>
+    <footer>
+        <div class="footer container">
+            <div>
+                <h1>Pregatire Bac</h1>
+                <a href="index.html" >Acasă</a>
+                    <a href="teorie.html">Teorie</a>
+                    <a href="exercitii.html">Exerciții</a>
+                    <a href="teste.html">Teste</a>
+            </div>
+            <div>
+                <h1>Informatie generala </h1>
+                <a href="index.html" >Telefon: 022 557 368</a>
+                    <a href="teorie.html">Address: Nicolae Titulescu St, Chișinău</a>
+                    <!-- <a href="exercitii.html">Exercitii</a>
+                    <a href="teste.html">Teste</a> -->
+            </div>
+            <div>
+                <h1>Adrese utile</h1>
+                <!-- <a href="index.html" ></a> -->
+                    <a href="https://mc.gov.md/ro/content/biblioteca-nationala-republicii-moldova">Biblioteca Națională al Republicii Moldova</a>
+                    <a href="https://mec.gov.md/">Ministerul Educației al Republicii Moldova</a>
+                    <a href="https://ctice.gov.md/manuale-scolare/">Centrul Tehnologii Inform. şi Comunicaţionale în Educaţie</a>
+                    <a href="https://chisinauedu.md/">Directia Generala Educatie, Tineret si Sport</a>
+                    <!-- <a href="exercitii.html">Exercitii</a>
+                    <a href="teste.html">Teste</a> -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

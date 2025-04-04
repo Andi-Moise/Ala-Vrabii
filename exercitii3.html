@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerciții</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container navbar">
+                <div class="logo">
+                    <h1>VA</h1>
+                </div>
+                <div class="links">
+                    <a href="index.html">Acasă</a>
+                    <a href="teorie.html">Teorie</a>
+                    <a href="exercitii.html">Exerciții</a>
+                    <a href="teste.html">Teste</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <div class="space"></div>
+    <main>
+        <p class="top-left container">Exerciții / <span>Tipul 3</span></p>
+        <div class="test container">
+            
+            <div class="title">Exerciții tip 3</div>
+            <div class="cond-3">
+                <small>3. Fie dat programul  în care sunt omise secvențe de instrucțiuni. </small>
+                <small>Completați secvențele lipsă astfel ca programul să citească de la tastatură numărul întreg pozitiv n și
+                    apoi n caractere. Programul trebuie să determine și să afișeze numărul de cifre citite.
+                    În cazul în care există mai multe soluții corecte, prezentați oricare dintre ele.   </small>
+                    <table >
+                        <tr>
+                          <th>Programul</th>
+                          <!-- <th>Afișare</th> -->
+                          
+                        </tr>
+                        <tr>
+                          <td>#include &lt;iostream><br>
+                            using namespace std;<br>
+                            int main()<br>
+                            {<br>
+                                <input type="text" placeholder="Scrie răspunusul">   n, i, nr;<br>
+                                <input type="text" placeholder="Scrie răspunusul">   c;<br>
+                            nr = <input type="text" placeholder="Scrie răspunusul">   ;<br>
+                            cin >> <input type="text" placeholder="Scrie răspunusul">  ;<br>
+                            for(i = 1; i <input type="text" placeholder="Scrie răspunusul">   n; i++){ <br>
+                                <input type="text" placeholder="Scrie răspunusul">  >> c;<br>
+                             if(’0’<= c <input type="text" placeholder="Scrie răspunusul">   c <=’9’) nr++;<br>
+                            }<br>
+                            cout <<<input type="text" placeholder="Scrie răspunusul">   ;<br>
+                            return 0; <br>
+                            }
+                            
+                            </td>
+                         
+
+                        </tr>
+                        
+                       
+                      </table>
+                      <p class="hidden answerV green">Raspuns corect: </p>
+                      <p class="hidden answerV"> 
+                        #include &lt;iostream><br>
+                            using namespace std;<br>
+                            int main()<br>
+                            {<br>
+                             int n, i, nr;<br>
+                             char c;<br>
+                             nr = 0 ;<br>
+                             cin >> n ;<br>
+                             for(i = 1; i <= n; i++){<br>
+                             cin >> c;<br>
+                             if(’0’<= c && c <=’9’) nr++;<br>
+                            }<br>
+                            cout << nr ;<br>
+                            return 0;<br>
+                            }
+                            
+                      </p>
+                      <p class="hidden answerV"><span class="blue">Notă.
+                    </span>  Se admit oricare alte variante corecte.</p>
+            </div>
+            <p class="punctaj">Punctaj: <span>7 puncte</span> </p>
+            
+            <div class="line"></div>
+            <div class="cond-3">
+                <small>3. Fie dată următoarea secvență de program:</small>
+                    <table >
+                        <tr>
+                          <th>Instrucțiune</th>
+                          <th>Afișare</th>
+                          
+                        </tr>
+                        <tr>
+                          <td>float a = -10.2, b = 17.35, c = -17.4; <br>
+                            if (a > b) a = trunc(a)*2; <br>
+                            else <br>
+                                   if (abs(trunc(c)) == abs(trunc(b))) c = trunc(c) + 10; <br>
+                                   else b = trunc(b) + 10; <br>
+                            cout  &lt;&lt; fixed  &lt;&lt;setprecision(0)  &lt;&lt; a  &lt;&lt;' ' &lt;&lt; b  &lt;&lt;' ' &lt;&lt; c;
+                            </td>
+                          <td class="appart">Scrieți ce se va afișa în rezultatul execuției secvenței date de program:
+                            <br>
+                            <input type="text" placeholder="Scrie răspunusul">
+                          </td>
+
+                        </tr>
+                        
+                       
+                      </table>
+                      <p class="green answerV hidden">Răspunsul corect: : -10 17 -7
+                    </p>
+                <small> Fie dată o secvență de instrucțiuni care citește de la tastatură un număr întreg a.
+                    Completați spațiul rezervat în instrucțiunea switch cu o expresie, astfel ca la ecran să se afișeze
+                    cuvântul DA, dacă numărul a este divizibil cu 3, dar nu este divizibil cu 5; în caz contrar să se afișeze
+                    cuvântul NU.
+                    </small>
+                    <p>cout<< " a = "; cin >> a; <br>
+                        switch <br>(<input type="text" placeholder="Scrie răspunusul">) <br>
+                        { <br>
+                        case 1: cout << "DA"; break; <br>
+                        default: cout << "NU";<br>
+                        }</p>
+                        <p class="answerV hidden green">Raspunsul corect:  a % 3 == 0 && a % 5 !=0</p>
+                        <p class="hidden answerV"><span class="blue">Notă.
+                        </span>  Se admit oricare alte variante corecte.</p>
+            </div>
+            <p class="punctaj">Punctaj: <span>7 puncte</span> </p>
+
+           
+            
+
+            
+            
+         
+            
+                   
+            
+            <div class="answer">
+                <p id="answerStart">VEZI RASPUNSULE <i class="fa-solid fa-arrow-right"></i></p>
+                 
+
+                </i></div>
+        </div>
+    </main>
+    <div class="space"></div>
+    <div class="space"></div>
+    <footer >
+        <div class="footer container">
+            <div>
+                <h1>Pregatire Bac</h1>
+                <a href="index.html" >Acasă</a>
+                    <a href="teorie.html">Teorie</a>
+                    <a href="exercitii.html">Exerciții</a>
+                    <a href="teste.html">Teste</a>
+            </div>
+            <div>
+                <h1>Informatie generala </h1>
+                <a href="index.html" >Telefon: 022 557 368</a>
+                    <a href="teorie.html">Address: Nicolae Titulescu St, Chișinău</a>
+                    <!-- <a href="exercitii.html">Exercitii</a>
+                    <a href="teste.html">Teste</a> -->
+            </div>
+            <div>
+                <h1>Adrese utile</h1>
+                <!-- <a href="index.html" ></a> -->
+                    <a href="https://mc.gov.md/ro/content/biblioteca-nationala-republicii-moldova">Biblioteca Națională al Republicii Moldova</a>
+                    <a href="https://mec.gov.md/">Ministerul Educației al Republicii Moldova</a>
+                    <a href="https://ctice.gov.md/manuale-scolare/">Centrul Tehnologii Inform. şi Comunicaţionale în Educaţie</a>
+                    <a href="https://chisinauedu.md/">Directia Generala Educatie, Tineret si Sport</a>
+                    <!-- <a href="exercitii.html">Exercitii</a>
+                    <a href="teste.html">Teste</a> -->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
